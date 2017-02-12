@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Analog Clock Widget</title>
+  <meta name="description" content="An analog clock face">
+  <meta name="author" content="Matt Lepley">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="watch">
+
+    <div id="top-strap" class="strap"></div>
+
+    <div id="watch-face">
+
+      <div id="hour-hand-container">
+        <div id="hour-hand-secondary-container">
+          <span id="hour-hand"></span>
+          <span id="hour-cover"></span>
+        </div>
+      </div>
+
+      <div id="minute-hand-container">
+        <span id="minute-hand"></span>
+      </div>
+
+      <div id="second-hand-container">
+        <span id="second-hand"></span>
+      </div>
+
+    </div>
+
+    <div id="bottom-strap" class="strap"></div>
+
+  </div>
+
+  <script src="js/analog-clock.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+  padding: 100px;
+}
+
+#watch {
+  //border: 1px solid red;
+  //display: inline-block;
+}
+
+#watch-face {
+  height: 200px;
+  width: 200px;
+  background-color: beige;
+  border: 1px solid black;
+  border-radius: 50%;
+  box-shadow: -1px 0 1px;
+  z-index: 0;
+}
+
+.strap {
+  position: relative;
+  height: 115px;
+  width: 100px;
+  border: 1px solid brown;
+  left: 50px;
+  box-shadow: -1px 0 1px;
+  z-index: -99;
+}
+
+#top-strap {
+  top: 15px;
+  border-top: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#bottom-strap {
+  bottom: 15px;
+  border-bottom: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#second-hand-container,
+#minute-hand-container,
+#hour-hand-container {
+  //border: 1px solid red;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform: rotate(0); // seconds and minutes are 6deg, hours are 30deg
+}
+
+#minute-hand-container {
+  position: relative;
+  top: -100%;
+}
+
+#second-hand-container {
+  top: -200%;
+}
+
+#hour-hand-secondary-container {
+  //border: 1px dotted blue;
+}
+
+#second-hand,
+#minute-hand,
+#hour-hand,
+#hour-cover {
+  display: block;
+  position: absolute;
+  height: 50%;
+  left: 50%;
+  top: 10px;
+}
+
+#second-hand {
+  width: 1px;
+  background-color: black;
+  //z-index: 30;
+}
+
+#minute-hand {
+  width: 4px;
+  background-color: gray;
+  margin-left: -5px;
+  //z-index: 20;
+}
+
+#hour-hand,
+#hour-cover {
+  //z-index: 10;
+}
+
+#hour-hand {
+  width: 6px;
+  margin-left: -6px;
+  background-color: blue;
+}
+
+#hour-cover {
+  height: 15%;
+  width: 10px;
+  top: 9px;
+  margin-left: -8px;
+  background-color: beige; // must match #watch-face background-color
+}
